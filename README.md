@@ -11,7 +11,11 @@ Examples and notes for the book Introduction to probability
 *   `∩` - **Intersection** - an `AND` statement
 *   `c` - **compliment** - a `!NOT` statement
 *   `∈` - **Event** - an event occurring
-*   `A1,…, An` - **Range** - A range of events outcomes
+*   `⊆` - **Subset**
+*   `⊆/` - **not in subset**
+*   `j`  - **number of events**
+*   `ø`  - **empty set**
+*   `A1,…, An` - **Partition** - A range of events outcomes
 
 ### Example Usage
 
@@ -23,3 +27,9 @@ Examples and notes for the book Introduction to probability
 *   `A ∩ B` consists of the pebble that is in both `A` and `B`
 *   `Ac` consists of the 4 pebbles that are not in `A`.
 
+#### Drawing a card
+
+`(D ∪ H)c = Dc ∩ Hc = B`
+not a diamond or a heart = 
+not a diamond and not a heart =
+*it is a black card*
