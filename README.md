@@ -33,3 +33,100 @@ Examples and notes for the book Introduction to probability
 not a diamond or a heart = 
 not a diamond and not a heart =
 *it is a black card*
+
+## r language
+
+### Installing r on mac
+
+if brew in not installed run 
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Then install r with homebrew
+
+```
+brew tap homebrew/science
+brew install r
+```
+
+#### Helpful tips
+
+* R will display a `+` for prompt for incomplete commands
+* Use arrow up to bring up last r command
+* arrow down moves forward in command list
+* Add comments using hashes `# this is a comment`
+
+### r Syntax
+
+Assign a value to an object
+
+```
+x = 11
+or
+x <- 11
+```
+
+read value from object
+
+```
+print(x)
+or
+x
+```
+
+list all objects
+
+```
+ls()
+```
+
+remove an object
+
+```
+rm(x)
+```
+
+R is case sensitive. Objects may contain dots such as `x.1`.
+
+Strings must be put in double quotation marks. `x = "omg"`
+
+There's no lazy type conversion like with javascript `"1" != 1`
+
+Get the square root of a number
+
+```
+sqrt(9)
+```
+
+Raise number by power (of half in example)
+
+```
+12^(1/2)
+```
+
+Logarithm
+
+```
+log(x)
+```
+
+Exponent 
+
+```
+exp(x)
+```
+
+Log with different bases (base 2 in example)
+
+```
+log2(x)
+```
+
+Calculate absolute values
+
+```
+abs(-12)
+```
+
