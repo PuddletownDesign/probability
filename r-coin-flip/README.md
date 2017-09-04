@@ -10,7 +10,7 @@ example:
 
 Make sure decimals are converted into percentages.
 
-**Make your own folder for notes (README.md) and code samples**
+**Use your own folder for code samples and take notes in `README.md`**
 
 *   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
 *   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
