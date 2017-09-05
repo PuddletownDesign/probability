@@ -22,16 +22,6 @@ p(3 heads in 3 flips) = p(3 tails in 3 flips)
 2.  create a sample of 2 possibilities -1 or 1`c(-1,1)`
 3.  10 iterations
 
-```r
-sequenceOfCoinTosses <- sample(c("H","T"), 10, replace = TRUE)
-```
-
-#### Chart it
-
-```r
-plot(cumsum(sequenceOfCoinTosses), type = 'l')
-```
-
 ## Writing my r code
 
 Because I know that we that we need specific outcomes for input, I'll make a basic function
@@ -47,10 +37,34 @@ cf <- function(x) {
 }
 ```
 
-Golfing it
+### Golfing it
 
 ```r
 cf <- function(x) {
-    paste(c(1/`^`(x,2) * 100, "%"), collapse = " ")
+    print(1/`^`(x,2) * 100)
 }
 ```
+
+### Charting the probability of 10 flips
+
+```r
+# Basic coin flip function
+
+cf <- function(x) {
+    1/`^`(x,2) * 100
+}
+
+# Generate a percentage for each flip in an array
+
+odds = c()
+for (i in 1:10) {
+    odds <- append(cf(i), odds)
+}
+
+# Now chart the array
+plot(rev(odds), type="l")
+```
+
+[chart of outcomes](http://tinyimg.io/i/7FcQLCV.png)
+
+Ok it looks like my math is fucked up as 1 flip should not generate 100% chance
