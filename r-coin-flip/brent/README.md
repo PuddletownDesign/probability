@@ -65,6 +65,6 @@ for (i in 1:10) {
 plot(rev(odds), type="l")
 ```
 
-[chart of outcomes](http://tinyimg.io/i/7FcQLCV.png)
+![chart of outcomes](http://tinyimg.io/i/7FcQLCV.png)
 
 Ok it looks like my math is fucked up as 1 flip should not generate 100% chance
