@@ -46,3 +46,11 @@ cf <- function(x) {
     paste(c(percent, "%"), collapse = " ") # concatenating the string with percent sign
 }
 ```
+
+Golfing it
+
+```r
+cf <- function(x) {
+    paste(c(1/`^`(x,2) * 100, "%"), collapse = " ")
+}
+```
