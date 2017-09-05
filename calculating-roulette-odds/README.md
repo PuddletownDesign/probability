@@ -1,5 +1,7 @@
 # Calculating the odds of winning roulette
 
+![roulette](http://tinyimg.io/i/vdy45wO.png)
+
 ## Probability percentages to calculate
 
 1.  Getting a particular color
