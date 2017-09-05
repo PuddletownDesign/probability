@@ -6,9 +6,9 @@ Using `r` program a generator that will take a variable number of coin flips and
 
 example:
 
--   HH is 33% chance
--   HHH is 16% chance
--   HTH is 16% chance
+-   HH is 25% chance
+-   HHH is 12.5% chance
+-   HTH is 12.5% chance
 
 Make sure decimals are converted into percentages.
 
