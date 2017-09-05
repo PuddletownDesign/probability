@@ -1,14 +1,48 @@
-# `r` Coin Flip
+# Brent's Notes
 
-Using `r` program a generator that will take a variable number of coin flips and calculate the probability of generating heads or tails x number of times.
+## Video Notes
 
-example:
+P(3 head in 3 flips)
 
-*   HH is 33% chance
-*   HHH is 16% chance
-*   HTH is 16% chance
+**3 flips**
 
-Make sure decimals are converted into percentages.
+2x2x2 = 8 possible outcomes = 1/8 \* 100 = 12.5% probability.
 
-*   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
-*   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
+**4 flips**
+
+4 flips = 2x2x2x2 = 16 possible outcomes = 1/16 \* 100 = 6.25% probability.
+
+p(3 heads in 3 flips) = p(3 tails in 3 flips)
+
+## `r` Notes
+
+### 10 coin tosses in a row
+
+1.  make a function for a sequence of tosses
+2.  create a sample of 2 possibilities -1 or 1`c(-1,1)`
+3.  10 iterations
+
+```r
+sequenceOfCoinTosses <- sample(c("H","T"), 10, replace = TRUE)
+```
+
+#### Chart it
+
+```r
+plot(cumsum(sequenceOfCoinTosses), type = 'l')
+```
+
+## Writing my r code
+
+Because I know that we that we need specific outcomes for input, I'll make a basic function
+
+```r
+cf <- function(x) {
+    flips <- x # the pass parameter of number of flips
+    outcomes <- 2 # number of possible outcomes each flip
+    totalOutcomes <- `^`(flips,outcomes) # total number of outcomes
+    decimal <- 1/totalOutcomes # a decimal of the probability
+    percent <- decimal * 100 # percentage of probability
+    paste(c(percent, "%"), collapse = " ") # concatenating the string with percent sign
+}
+```
