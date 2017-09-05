@@ -1,12 +1,19 @@
-# pass the number of times the coin will be flipped
+
+# Basic coin flip function
 
 cf <- function(x) {
-    flips <- x # the pass parameter of number of flips
-    outcomes <- 2 # number of possible outcomes each flip
-    totalOutcomes <- `^`(flips,outcomes) # total number of outcomes
-    decimal <- 1/totalOutcomes # a decimal of the probability
-    percent <- decimal * 100 # percentage of probability
-    paste(c(percent, "%"), collapse = " ") # concatenating the string with percent sign
+    1/(x*2) * 100
 }
 
-cf(4)
+# Generate a percentage for each flip in an array
+
+odds = c()
+
+# i is the number of times the coin will be flipped
+
+for (i in 1:10) {
+    odds <- append(cf(i), odds)
+}
+
+# Now chart the array
+plot(rev(odds), type="l")
