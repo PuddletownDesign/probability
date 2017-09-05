@@ -2,7 +2,7 @@
 # Basic coin flip function
 
 cf <- function(x) {
-    1/(x*2) * 100
+    1/2**x * 100
 }
 
 # Generate a percentage for each flip in an array

@@ -30,7 +30,7 @@ Because I know that we that we need specific outcomes for input, I'll make a bas
 cf <- function(x) {
     flips <- x # the pass parameter of number of flips
     outcomes <- 2 # number of possible outcomes each flip
-    totalOutcomes <- x*outcomes # total number of outcomes
+    totalOutcomes <- outcomes**x # total number of outcomes
     decimal <- 1/totalOutcomes # a decimal of the probability
     percent <- decimal * 100 # percentage of probability
     paste(c(percent, "%"), collapse = " ") # concatenating the string with percent sign
@@ -41,7 +41,7 @@ cf <- function(x) {
 
 ```r
 cf <- function(x) {
-    print(1/(x*2) * 100)
+    print(1/(2**x) * 100)
 }
 ```
 
@@ -51,7 +51,7 @@ cf <- function(x) {
 # Basic coin flip function
 
 cf <- function(x) {
-    1/(x*2) * 100
+    1/(2**x) * 100
 }
 
 # Generate a percentage for each flip in an array
