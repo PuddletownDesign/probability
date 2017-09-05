@@ -1,5 +1,7 @@
 # Probability Studies
 
+![probably](https://imgs.xkcd.com/comics/seashell.png)
+
 ## Task 2 - Calculating roulette odds in `r`
 
 <https://github.com/PuddletownDesign/probability/tree/master/calculating-roulette-odds>
