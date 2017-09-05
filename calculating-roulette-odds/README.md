@@ -6,7 +6,7 @@
 
 1.  Getting a particular color
 2.  Getting a 1 particular number
-3.  Getting a particular number with `x` bets placed (most importantly combinations of 2, 4, 6 and 12 numbers)
+3.  Getting a particular number with `x` bets placed (most importantly combinations of 2, 4, 16)
 
 ### We will make the following assumptions
 
