@@ -62,7 +62,7 @@ for (i in 1:10) {
 }
 
 # Now chart the array
-plot(rev(odds), type="l")
+plot(rev(odds), type="l", xlab="Flips", ylab="Percent", main="Probability of x correct coin flips in a row")
 ```
 
-![chart of outcomes](http://tinyimg.io/i/CQClVJA.png)
+![chart of outcomes](http://tinyimg.io/i/OYRg2WN.png)

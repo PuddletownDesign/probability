@@ -9,11 +9,11 @@ cf <- function(x) {
 
 odds = c()
 
-# i is the number of times the coin will be flipped
+# i the number of times the coin will be flipped
 
 for (i in 1:10) {
     odds <- append(cf(i), odds)
 }
 
 # Now chart the array
-plot(rev(odds), type="l")
+plot(rev(odds), type="l", xlab="Flips", ylab="Percent", main="Probability of x correct coin flips in a row")
