@@ -1,8 +1,17 @@
-calculate.probabilty.of.sequence <- function(cointossSequence="HHT", ...) {
-	samples <- sample(c(-1,1), 1000, replace = TRUE)
-	print(samples)
+coin.flip <- function(flips) {
+	p = 1 / ( flips * 2 ) * 100
+	print(p)
+	return(p)
 }
 
-toss <- calculate.probabilty.of.sequence("HH")
+odds = c()
 
-plot(cumsum(toss), type="l")
+calculate.probabilty.of.sequence <- function(sequence="HHT", flips=10,  ...) {
+	for ( i in 1:flips ) {
+		odds <- append(coin.flip(flips), odds)
+	}
+}
+
+odds <- calculate.probabilty.of.sequence("HH")
+print(odds)
+
