@@ -2,7 +2,14 @@
 
 ![coinflip](https://68.media.tumblr.com/cf0b431f9472e7ae28034fc840263625/tumblr_o0n2lhOtzH1t0qqjbo1_500.gif)
 
-Using `r` program a generator that will take a variable number of coin flips and calculate the probability of generating heads or tails x number of times.
+# Part 1
+
+Using `r` program a generator calculates the probability of getting all heads and
+the probability of getting at least one tails when flipping a coin x number of times
+
+# Part 2
+
+Now extend the program written in part 1 to prompt the user for a sequence (see below) and provide the probability of that sequence occurring when a coin is flipped x number of times.  
 
 example:
 
@@ -16,3 +23,4 @@ Make sure decimals are converted into percentages.
 
 -   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
 -   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
+-   [Use this guide for part 2](https://www.fourmilab.ch/rpkp/experiments/statistics.html)
