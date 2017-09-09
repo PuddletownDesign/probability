@@ -91,3 +91,74 @@ Make sure decimals are converted into percentages.
 
 -   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
 -   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
+
+# Part 2
+
+If you flip a coin four times what is the probability that exactly one is heads.
+
+`P(exactly 1 heads) = P(HTTT) + P(THTT) + P(TTHT) + P(TTTH)`
+
+There are 16 different HT combinations that can happen when you flip a coin 4 times.
+
+One head is 1/16 probability.
+
+So if we add up all the events where we have exactly one head there is a 4/16 chance of having exactly one head when you flip a coin 4 times. 4/16 is equal to 1/4.
+
+What is the probability of getting exactly two heads when you flip a coin four times.
+
+There are 16 equally likely possibilities.
+
+HHHH  HTHH  THHH  TTHH
+HHHT  HTHT  THHT  TTHT
+HHTH  HTTH  THTH  TTTH
+HHTT  HTTT  THTT  TTTT
+
+P(exactly 2 heads) = 6/16 = 3/8
+
+Flip outcome:
+
+    _ _ _ _
+    1 2 3 4
+
+If you place one H in one of 4 slots above then you only have 3 more spots for another H.
+
+The first H would have 4 slot options to choose from -- it could go into slot 1, slot 2, slot 3, or slot 4. Once it is placed then second H would only have three slots left to choose from. Since there are four options for the first H and 3 options for the second H we multiply 4 x 3 to account for all the combinations they could be.
+
+So we end up with 12 different scenarios.
+
+There would only be 12 different scenarios if we were looking at the first head and the second head as two different heads. So we divide by two 12/2 = 6 different scenarios.
+
+There is a 6/16th or 3/8ths chance of getting exactly two heads when flipping a coin four times.
+
+Protocol:
+
+-   Figure out how many different combinations of heads and tails can there occur for a given number of coin flips:
+
+`numberOfWays =  flipOutcomes ** flips`
+
+-   Calculate number of different scenarios that contain sequence searched for.
+
+
+        calculateNumberofScenarios <- function(flips, lengthofSequence) {
+
+          numberOfScenarios = 1
+          counterSequence = lengthofSequence
+
+          while( counterSequence != flips ) {
+            counterSequence = counterSequence + 1
+            numberOfScenarios = numberOfScenarios * counterSequence
+
+            cat("Length of Sequence: ", counterSequence)
+            cat("\n")
+          }
+
+          # to make up for overcounting
+          numberOfScenarios = numberOfScenarios / lengthofSequence
+
+          cat("Number of scenarios is: ", numberOfScenarios)
+          return(numberOfScenarios)
+        }
+
+-   Find the probability of getting the squence in a given number of coin flips by taking the numberofScenarios and dividing it by numberOfWays
+
+`P(exactly x tails) = numberofScenarios / numberOfWays`
