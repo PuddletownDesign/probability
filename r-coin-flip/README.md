@@ -21,6 +21,12 @@ Make sure decimals are converted into percentages.
 
 **Use your own folder for code samples and take notes in `README.md`**
 
+# Part 1
+
 -   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
 -   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
--   [Use this guide for part 2](https://www.fourmilab.ch/rpkp/experiments/statistics.html)
+
+# Part 2
+
+-   (<https://www.fourmilab.ch/rpkp/experiments/statistics.html>)
+-   <https://www.youtube.com/watch?v=8TIben0bJpU>
