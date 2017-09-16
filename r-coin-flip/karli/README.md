@@ -132,33 +132,43 @@ There is a 6/16th or 3/8ths chance of getting exactly two heads when flipping a 
 
 Protocol:
 
--   Figure out how many different combinations of heads and tails can there occur for a given number of coin flips:
+-   Figure out how many different combinations of heads and tails that can occur for a given number of coin flips:
 
-`numberOfWays =  flipOutcomes ** flips`
+    `numberOfWays =  flipOutcomes ** flips`
 
--   Calculate number of different scenarios that contain sequence searched for.
+    numberOfWays = 2 ^ 4 = 16
+
+-   Calculate number of different outcomes that have k heads in n flips. We will take advantage of factorials to solve this category of problems: n!
+
+    ``The factorial function takes an integer n and returns the product of the integers from 1 to n denoted n! and read n factorial: n! = 1 _ 2 _ 3 ... n\```
+
+-   **binomial coefficient** is another term we need to become familiar with to be able to calculate this type of probability quickly.
+
+-   A binomial coefficient equals the number of combinations of k things that can be selected from a set of n items _which is exactly the type of problem we have :)_
+
+-   Read the part in parentheses as _n choose k_
+-   ![binomialcoefficient](http://www.stat.yale.edu/Courses/1997-98/101/bincoef.gif)
+
+-   Another way to easily notate the left side of the equation on a computer is: C(n,k)
+
+    ```C(4,2) = 4! / 2! (4 - 2)!  = 4! / 2! * 2! = 24 / 4 = 6
+    We expand 4! to be 1 * 2 * 3 * 4 getting 24
+    We expand 2! to be 1 _ 2 getting 2
+    ```
 
 
-        calculateNumberofScenarios <- function(flips, lengthofSequence) {
+-   Find the probability of getting x heads in a given number of coin flips by taking the numberofHeadsOutcomes and dividing it by numberOfWays
 
-          numberOfScenarios = 1
-          counterSequence = lengthofSequence
+    `P(exactly x heads) = numberofHeadsOutcomes / numberOfWays`
 
-          while( counterSequence != flips ) {
-            counterSequence = counterSequence + 1
-            numberOfScenarios = numberOfScenarios * counterSequence
+        4 coin flips
+        P(exactly 2 heads) = 6 / 16 = 3 / 8
 
-            cat("Length of Sequence: ", counterSequence)
-            cat("\n")
-          }
+For more on binomial coefficients please checkout:
 
-          # to make up for overcounting
-          numberOfScenarios = numberOfScenarios / lengthofSequence
+-   <http://www.mathwords.com/b/binomial_coefficients.htm>
+-   <https://en.wikipedia.org/wiki/Binomial_coefficient>
 
-          cat("Number of scenarios is: ", numberOfScenarios)
-          return(numberOfScenarios)
-        }
+And for a simulation of calculating the probability of getting x heads in y coin tosses check out:
 
--   Find the probability of getting the squence in a given number of coin flips by taking the numberofScenarios and dividing it by numberOfWays
-
-`P(exactly x tails) = numberofScenarios / numberOfWays`
+-   <http://www.wolframalpha.com/widgets/gallery/view.jsp?id=431be63678172c25475de1cba50edeea>
