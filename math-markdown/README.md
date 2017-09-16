@@ -1,4 +1,4 @@
-# Writing LATEX math symbols in Markdown
+# Writing LATEX math symbols in a Github README
 
 Sadly github is not well set up to display math using LATEX. The current best solution is to convert it to an image and link it.
 
