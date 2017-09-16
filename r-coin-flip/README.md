@@ -27,19 +27,26 @@ Make sure decimals are converted into percentages.
 
 -   [Use this Khan Academy video as reference](https://www.youtube.com/watch?v=mkyZ45KQYi4&list=PL06A16C388F14E6FE&index=6)
 -   [Here is a basic guide to simulating a coin toss in r](http://www.rfortraders.com/simulation-of-a-coin-toss-in-r/)
--   [Use this guide for part 2](https://www.fourmilab.ch/rpkp/experiments/statistics.html)
 
-# Part 2
-
--   (<https://www.fourmilab.ch/rpkp/experiments/statistics.html>)
+## Part 1 Solutions
 
 ```r
 cf <- function(x) {
     flips <- x # the pass parameter of number of flips
--   <https://www.youtube.com/watch?v=8TIben0bJpU>
     totalOutcomes <- outcomes**x # total number of outcomes
     decimal <- 1/totalOutcomes # a decimal of the probability
     percent <- decimal * 100 # percentage of probability
     paste(c(percent, "%"), collapse = " ") # concatenating the string with percent sign
 }
 ```
+
+# Part 2
+
+-   [Use this guide for part 2](https://www.fourmilab.ch/rpkp/experiments/statistics.html)
+
+## Other references
+
+-   <https://www.youtube.com/watch?v=8TIben0bJpU>
+-   <https://www.fourmilab.ch/rpkp/experiments/statistics.html>
+
+
