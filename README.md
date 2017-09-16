@@ -13,3 +13,7 @@
 ## Introduction to probability notes
 
 <https://github.com/PuddletownDesign/probability/blob/master/intro-to-probability-notes.md>
+
+### Reference
+
+-   [Displaying math equasions on a github readme](https://github.com/PuddletownDesign/probability/tree/master/math-markdown)
