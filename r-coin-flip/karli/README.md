@@ -140,7 +140,7 @@ Protocol:
 
 -   Calculate number of different outcomes that have k heads in n flips. We will take advantage of factorials to solve this category of problems: n!
 
-    ``The factorial function takes an integer n and returns the product of the integers from 1 to n denoted n! and read n factorial: n! = 1 _ 2 _ 3 ... n\```
+    `The factorial function takes an integer n and returns the product of the integers from 1 to n denoted n! and read n factorial: n! = 1 * 2 * 3 ... n`
 
 -   **binomial coefficient** is another term we need to become familiar with to be able to calculate this type of probability quickly.
 
@@ -151,10 +151,10 @@ Protocol:
 
 -   Another way to easily notate the left side of the equation on a computer is: C(n,k)
 
-    ```C(4,2) = 4! / 2! (4 - 2)!  = 4! / 2! * 2! = 24 / 4 = 6
-    We expand 4! to be 1 * 2 * 3 * 4 getting 24
-    We expand 2! to be 1 _ 2 getting 2
-    ```
+        C(4,2) = 4! / 2! (4 - 2)!  = 4! / 2! * 2! = 24 / 4 = 6
+
+        We expand 4! to be 1 * 2 * 3 * 4 getting 24
+        We expand 2! to be 1 * 2 getting 2
 
 
 -   Find the probability of getting x heads in a given number of coin flips by taking the numberofHeadsOutcomes and dividing it by numberOfWays
