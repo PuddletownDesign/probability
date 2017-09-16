@@ -17,4 +17,4 @@ $$
 
 Using an image conversion tool :(
     
-![bleh](https://latex.codecogs.com/png.download?%5Cbg_white%20%5Chuge%20x_%7B1%2C2%7D%20%3D%20%5Cfrac%7B-b%20%5Cpm%20%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2b%7D)
+![bleh](http://tinyimg.io/i/W2iOafs.png)
