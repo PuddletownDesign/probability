@@ -7,11 +7,17 @@
 # Part 1
 
 Using `r` program a generator calculates the probability of getting all heads and
-the probability of getting at least one tails when flipping a coin x number of times
+the probability of getting one tails when flipping a coin x number of times
 
 # Part 2
 
-Now extend the program written in part 1 to prompt the user for a sequence (see below) and provide the probability of that sequence occurring when a coin is flipped x number of times.  
+Now extend the program written in part 1 to calculate the probability of getting x number of heads for x number of flips (regardless of order).
+
+If I flip a coin 10 times what is the probability of getting 5 heads, 4 heads, 9 heads, 8 heads ... etc?
+
+# Part 3
+
+Now extend the program written in part 2 to prompt the user for a sequence (see below) and provide the probability of that sequence occurring when a coin is flipped x number of times.  
 
 example:
 
@@ -48,5 +54,3 @@ cf <- function(x) {
 
 -   <https://www.youtube.com/watch?v=8TIben0bJpU>
 -   <https://www.fourmilab.ch/rpkp/experiments/statistics.html>
-
-
